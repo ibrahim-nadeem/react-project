@@ -1,0 +1,103 @@
+/* Basic container for the entire categories section */
+.categories-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+}
+
+/* Heading style */
+.categories-container h2 {
+  font-size: 2rem;
+  color: seagreen;
+  margin-bottom: 20px;
+}
+
+/* Flexbox grid to display the category cards */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto grid for responsiveness */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual category card styling */
+.category-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 280px; /* Set a max width to avoid oversized cards */
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Hover effect */
+}
+
+/* Image inside category card */
+.category-card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure images maintain aspect ratio without distortion */
+  border-bottom: 2px solid #e1e1e1; /* Separator between image and text */
+}
+
+/* Category name and car count text */
+.category-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+  }
+}
+
+/* .categories-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5fdf2;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.category-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 8px;
+} */
+
+/* .category-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.category-card p {
+  color: green;
+  font-weight: bold;
+} */

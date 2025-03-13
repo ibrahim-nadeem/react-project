@@ -1,0 +1,100 @@
+.about-us {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5fff5;
+}
+
+/* Banner Section */
+.about-banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.overlay h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Content Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Image Gallery */
+.about-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 40%;
+}
+
+.about-images img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Text Section */
+.about-text {
+  width: 55%;
+}
+
+.about-text h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.about-text ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.about-text ul li::before {
+  content: "✔";
+  color: green;
+  margin-right: 8px;
+  font-weight: bold;
+}

@@ -1,0 +1,63 @@
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .carousel img {
+    width: 100%;                /* Make sure the image fills the width */
+    height: 500px;              /* Set a fixed height (adjustable based on your design) */
+    object-fit: cover;          /* Ensures the image covers the entire space */
+    border-radius: 10px;        /* Optional: Rounded corners for the image */
+  }
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+  }
+  /* Default: 16:9 aspect ratio for larger screens */
+.carousel img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* For smaller screens, you can reduce the height */
+  @media (max-width: 768px) {
+    .carousel img {
+      height: 300px;  /* Adjust height for smaller devices */
+    }
+  }
+  
+  /* For mobile devices (portrait mode), you can reduce the height even more */
+  @media (max-width: 480px) {
+    .carousel img {
+      height: 200px;  /* Adjust height for very small screens */
+    }
+  }
+ .btn-1{
+    background-color: seagreen;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ .btn-2{
+
+background-color: skyblue;
+    color:white ;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+.categories-container h2{
+  color: seagreen;
+}
+  
+
+
+
+ 
+

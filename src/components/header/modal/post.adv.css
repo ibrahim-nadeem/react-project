@@ -1,0 +1,60 @@
+ /* Limit the modal width and round corners */
+.modal-dialog {
+    max-width: 600px; /* Adjust as needed */
+  }
+  
+  .modal-content {
+    border-radius: 6px;
+    /* Optionally add a subtle box shadow if desired */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the container and limit its width inside the modal body */
+  .container.mt-4 {
+    max-width: 600px;  /* Match .modal-dialog or tweak as needed */
+    margin: 0 auto;
+  }
+  
+  /* Make the subheading green, as per screenshot */
+  .container.mt-4 h3.text-success {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Give the form a clean “card-like” look */
+  form.border.p-4.rounded.shadow-sm {
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    border-radius: 6px;
+    /* Bootstrap’s .shadow-sm is a light shadow; you can override if you want stronger */
+  }
+  
+  /* Slightly bolder labels */
+  form .form-label {
+    font-weight: 500;
+  }
+  
+  /* Ensure inputs, selects, and textareas have consistent sizing and subtle rounding */
+  form .form-control,
+  form .form-select {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+  }
+  
+  /* Force the “Starts On” and “Ends On” fields and the three selects to distribute evenly */
+  .mb-3.d-flex.gap-3 > div,
+  .mb-3.d-flex.gap-3 > select {
+    flex: 1;
+  }
+  
+  /* Style the submit button as in the screenshot (blue) */
+  form .btn.btn-primary {
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    letter-spacing: 0.5px;
+    /* If you want green, replace with:
+       background-color: #28a745;
+       border-color: #28a745;
+    */
+  }
