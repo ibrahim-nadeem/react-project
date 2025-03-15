@@ -31,7 +31,7 @@ return (
               </Modal.Header>
               <Modal.Body>
 
-         <div className="container mt-4">
+         <div className="containers mt-4">
                       <h3 className="text-success">Post Advertisement</h3>
                      <form className="border rounded shadow-sm" onSubmit={handleSubmit}>
                         <div className="mb-3">
